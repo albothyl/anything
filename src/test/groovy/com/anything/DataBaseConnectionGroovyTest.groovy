@@ -1,4 +1,4 @@
-package com.anything.board
+package com.anything
 
 import com.anything.configuration.RepositoryConfig
 import org.junit.Assert
@@ -21,7 +21,7 @@ class DataBaseConnectionGroovyTest extends Specification {
         setup:
         def Date now = new Date(2015,05,15);
         def connection = dataSource.getConnection();
-        def preparedStatement = connection.prepareStatement("INSERT INTO anything.MEMBER (email, password, name, nickName, grade, updateAt, createAt) VALUES(?,?,?,?,?,?,?)");
+        def preparedStatement = connection.prepareStatement("INSERT INTO anything.MEMBER (email, password, name, nick_Name, grade, update_At, create_At) VALUES(?,?,?,?,?,?,?)");
         preparedStatement.setString(1,"testEmail@test.com");
         preparedStatement.setString(2,"testPassword");
         preparedStatement.setString(3,"testName");
