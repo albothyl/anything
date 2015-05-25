@@ -57,6 +57,6 @@ flyway {
     user = 'jjhwqqq'
     password = 'jhwqqq2842!'
     schemas = ['anything']
-    table= 'flyway_migration_history'
+    table = 'flyway_migration_history'
     encoding = 'UTF8'
 }
